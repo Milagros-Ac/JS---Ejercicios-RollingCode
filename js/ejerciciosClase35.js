@@ -1,7 +1,7 @@
 /*1-Número positivo o negativo
 Escribir un programa que determine si un número ingresado por el usuario es
 positivo, negativo o cero.*/
-const numero = Number(prompt("Ingresa un número:"));
+const numero = Number(prompt("Ingresa un número para saber si es positivo,negarivo o cero:"));
 
 if (numero > 0) {
     console.log("El número es positivo.");
@@ -22,4 +22,17 @@ if (edad > 16) {
 }
 else{
     console.log("No podes votar");
+}
+
+/* 3. Número par o impar
+○ Comprobar si el número ingresado es par o impar*/
+
+let parImpar = Number (prompt("Ingrese un numero para saber si es par o impar"));
+
+if (parImpar % 2 === 0 ) {
+    console.log(`El numero : ${parImpar} es par`);
+        
+} else {
+    console.log(`el numero : ${parImpar} es impar`);
+    
 }
