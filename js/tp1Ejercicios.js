@@ -73,3 +73,25 @@ if (numero % 2 === 0) {
 else {
     console.log(`El ${numero} no es divisible por 2.`)
 }
+
+/*9.- Escribe un programa que pida una frase y escriba las vocales que aparecen
+Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
+Ejemplo:
+input: Hola mundo
+Output: oauo
+Dificultad:  🟢🟡*/
+let frase = prompt("Ingresá una frase:");
+
+for (let i = 0; i < frase.length; i++) {
+    let letra = frase.charAt(i).toLowerCase();
+
+    if (
+        letra === "a" ||
+        letra === "e" ||
+        letra === "i" ||
+        letra === "o" ||
+        letra === "u"
+    ) {
+        console.log(letra);
+    }
+}
