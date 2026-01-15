@@ -17,3 +17,11 @@ Output: Hola Coder
 Dificultad:  🟢*/
 let Coder = prompt("Ingrese su nombre")
 document.writeln("Hola "+ Coder)
+
+/*5.- Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números.
+Nota: Tener en cuenta la siguiente función: parseInt
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/parseInt
+Dificultad:  🟢*/
+let numer1 = parseInt(prompt("Introduce el primer número:"));
+let numer2 = parseInt(prompt("Introduce el segundo número:"));
+console.log(`El resultado de la suma es: ${numer1 + numer2}`);
