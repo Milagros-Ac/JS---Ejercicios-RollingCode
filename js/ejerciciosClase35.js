@@ -48,3 +48,16 @@ if (contraIngresada === contraGuardada) {
 } else {
     console.log("La contraseña no coincide.");
 }
+/*5. Mayor de tres números
+○ Pedir tres números al usuario y mostrar cuál es el mayor.*/
+const n1 = Number(prompt("Primer número:"));
+const n2 = Number(prompt("Segundo número:"));
+const n3 = Number(prompt("Tercer número:"));
+
+if (n1 >= n2 && n1 >= n3) {
+    console.log("El mayor es: " + n1);
+} else if (n2 >= n1 && n2 >= n3) {
+    console.log("El mayor es: " + n2);
+} else {
+    console.log("El mayor es: " + n3);
+}
