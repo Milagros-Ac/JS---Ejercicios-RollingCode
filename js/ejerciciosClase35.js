@@ -36,3 +36,15 @@ if (parImpar % 2 === 0 ) {
     console.log(`el numero : ${parImpar} es impar`);
     
 }
+
+/*4. Contraseña segura
+○ Comparar una contraseña ingresada con una contraseña guardada. Mostrar
+mensaje si coinciden o no.*/
+const contraGuardada = "123";
+const contraIngresada = prompt("Ingresa tu contraseña:");
+
+if (contraIngresada === contraGuardada) {
+    console.log("La contraseña coincide.");
+} else {
+    console.log("La contraseña no coincide.");
+}
