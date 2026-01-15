@@ -12,3 +12,14 @@ if (numero > 0) {
 } else {
     console.log("Lo que ingresaste no es un número válido.");
 }
+
+
+/*2. Edad para votar
+○ Solicitar la edad del usuario y mostrar si puede votar*/
+let edad = Number (prompt("Ingresa tu edad:"));
+if (edad > 16) {
+    console.log("Si podes votar");
+}
+else{
+    console.log("No podes votar");
+}
