@@ -25,3 +25,17 @@ Dificultad:  🟢*/
 let numer1 = parseInt(prompt("Introduce el primer número:"));
 let numer2 = parseInt(prompt("Introduce el segundo número:"));
 console.log(`El resultado de la suma es: ${numer1 + numer2}`);
+
+/*6- Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
+Ejemplo: 
+input: 15 , 3
+Output: El 15 es el número más grande
+Dificultad:  🟢*/
+let numero1 = parseFloat (prompt("Ingrese el primero numero"))
+let numero2 = parseFloat (prompt("Ingrese el segundo numero"))
+if (numero1 > numero2){
+    document.writeln("El" + numero1 + " es el numero mas grande")
+}
+else {
+    document.writeln("El " + numero2 + " es el numero mas grande")
+}
