@@ -114,3 +114,40 @@ if (numeros % 2 === 0) {
 } else {
     console.log(`El ${numeros} no es divisible por 2, 3, 5 ni 7.`);
 }
+
+/*11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
+Ejemplo: 
+
+input: 20
+input: 210
+Output: El 20 es divisible por 2 y por 5.
+Output: El 210 es divisible por 2, por 3, por 5 y por 7.
+*/
+let numeroD = Number(prompt("Introduce un número:"));
+
+if (numeroD % 2 === 0) {
+    console.log("El " + numeroD + " es divisible por 2");
+}
+
+if (numeroD % 3 === 0) {
+    console.log("El " + numeroD + " es divisible por 3");
+}
+
+if (numeroD % 5 === 0) {
+    console.log("El " + numeroD + " es divisible por 5");
+}
+
+if (numeroD % 7 === 0) {
+    console.log("El " + numeroD + " es divisible por 7");
+}
+
+if (
+    numeroD % 2 !== 0 &&
+    numeroD % 3 !== 0 &&
+    numeroD % 5 !== 0 &&
+    numeroD % 7 !== 0
+) {
+    console.log(
+        "El " + numeroD + " no es divisible por 2, 3, 5 ni 7"
+    );
+}
