@@ -39,3 +39,22 @@ if (numero1 > numero2){
 else {
     document.writeln("El " + numero2 + " es el numero mas grande")
 }
+
+/*7.- Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+Ejemplo: 
+input: 15 , 3, 9
+Output: El 15 es el número más grande
+Dificultad:  🟢*/
+let num1 = parseInt (prompt("Ingrese el primer numero"))
+let num2 = parseInt (prompt("Ingrese el primer numero"))
+let num3 = parseInt (prompt("Ingrese el primer numero"))
+if (num1 >= num2 && num1 <= num3 ){
+    mayor = num2
+}
+else if (num2 >= num1 && num2 >= num3){
+    mayor = num2;
+}
+else{
+    mayor = num3;
+}
+console.log(`El ${mayor} es el número más grande`);
