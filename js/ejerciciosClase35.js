@@ -117,3 +117,19 @@ if (total > 100) {
 } else {
     console.log("Sin descuento. Total: $" + total);
 }
+
+/*10. Verificar acceso 
+● Solicitar nombre de usuario y contraseña. Verificar si ambos coinciden con 
+valores predefinidos. */
+
+const usuarioG = "admin";
+const contraseñaG = "1234";
+
+const usuarioIn = prompt("Usuario:");
+const contraseñaIn = prompt("Contraseña:");
+
+if (usuarioIn === usuarioG && contraseñaIn === contraseñaG) {
+    alert("¡Bienvenido al sistema!");
+} else {
+    alert("Credenciales incorrectas.");
+}
