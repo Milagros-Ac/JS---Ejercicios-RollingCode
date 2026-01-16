@@ -104,3 +104,16 @@ if (nota >= 7) {
 } else {
     console.log("Reprobado");
 }
+
+/*9. Precio con descuento 
+○ Si el monto de la compra supera $100, aplicar un 10% de descuento. */
+
+let total = Number(prompt("Monto de la compra:"));
+
+if (total > 100) {
+    const descuento = total * 0.10;
+    total = total - descuento;
+    console.log("Se aplicó descuento. Total a pagar: $" + total);
+} else {
+    console.log("Sin descuento. Total: $" + total);
+}
