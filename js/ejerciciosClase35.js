@@ -80,3 +80,13 @@ if (operacion === "+") {
 } else if (operacion === "/") {
     b !== 0 ? console.log("Resultado: " + (a / b)) : console.log("No se puede dividir por 0");
 }
+
+/*7. Año bisiesto 
+○ Solicitar un año y comprobar si es bisiesto. */
+const año = Number(prompt("Ingresa el año:"));
+
+if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+    console.log("Es bisiesto.");
+} else {
+    console.log("No es bisiesto.");
+}
