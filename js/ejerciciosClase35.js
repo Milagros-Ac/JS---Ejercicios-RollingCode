@@ -90,3 +90,17 @@ if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
 } else {
     console.log("No es bisiesto.");
 }
+
+/*8. Clasificación de calificaciones 
+○ Pedir una calificación numérica (0-10) y mostrar la nota correspondiente 
+(Aprobado, Reprobado, Excelente). */
+
+const nota = Number(prompt("Ingresa tu nota (0-10):"));
+
+if (nota >= 7) {
+    console.log("Excelente");
+} else if (nota >= 6) {
+    console.log("Aprobado");
+} else {
+    console.log("Reprobado");
+}
