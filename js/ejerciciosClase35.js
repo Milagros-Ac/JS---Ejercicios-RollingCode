@@ -129,7 +129,8 @@ const usuarioIn = prompt("Usuario:");
 const contraseñaIn = prompt("Contraseña:");
 
 if (usuarioIn === usuarioG && contraseñaIn === contraseñaG) {
-    alert("¡Bienvenido al sistema!");
+    console.log("¡Bienvenido al sistema!");
+    
 } else {
-    alert("Credenciales incorrectas.");
+   console.log("Credenciales incorrectas.");
 }
