@@ -61,3 +61,22 @@ if (n1 >= n2 && n1 >= n3) {
 } else {
     console.log("El mayor es: " + n3);
 }
+
+/*6. Calculadora básica
+○ Usar if...else para realizar suma, resta, multiplicación o división según la
+opción elegida.
+ */
+
+const operacion = prompt("Elige: suma (+), resta (-), mult (*), div (/)");
+const a = Number(prompt("Número A:"));
+const b = Number(prompt("Número B:"));
+
+if (operacion === "+") {
+    console.log("Resultado: " + (a + b));
+} else if (operacion === "-") {
+    console.log("Resultado: " + (a - b));
+} else if (operacion === "*") {
+    console.log("Resultado: " + (a * b));
+} else if (operacion === "/") {
+    b !== 0 ? console.log("Resultado: " + (a / b)) : console.log("No se puede dividir por 0");
+}
