@@ -35,3 +35,19 @@ if (año > 0 && mes >= 1 && mes <= 12) {
 }
 
 esValida ? console.log("Fecha válida") : console.log("Fecha no válida");
+
+/*3. Verificación de acceso por roles 
+○ Solicitar nombre de usuario y rol. Permitir o denegar acceso dependiendo si 
+es "admin", "editor" o "invitado".*/
+
+const rol = prompt("Ingresa tu rol (admin, editor, invitado):").toLowerCase();
+
+if (rol === "admin") {
+    console.log("Acceso total concedido.");
+} else if (rol === "editor") {
+    console.log("Acceso de edición concedido.");
+} else if (rol === "invitado") {
+    console.log("Acceso de solo lectura.");
+} else {
+    console.log("Rol no reconocido. Acceso denegado.");
+}
