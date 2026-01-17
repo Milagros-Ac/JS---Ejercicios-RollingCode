@@ -67,3 +67,20 @@ if (ingreso <= 1000) {
     impuesto = ingreso * 0.20; 
 }
 console.log(`Impuesto a pagar: $${impuesto}`);
+
+/*5. Conversión de temperatura 
+○ Si se elige °C o °F, convertir entre ambas y verificar si la temperatura es 
+normal, fiebre o hipotermia.*/
+
+const CelsiusOFahrenheit = prompt("¿Convertir a (C)elsius o (F)ahrenheit?").toUpperCase();
+const valor = Number(prompt("Temperatura actual:"));
+
+if (CelsiusOFahrenheit === "F") {
+    const fahr = (valor * 9/5) + 32;
+    console.log(`Temp: ${fahr}°F`);
+} else {
+    if (valor < 35) console.log("Hipotermia");
+    else if (valor >= 35 && valor <= 37.5) console.log("Normal");
+    else console.log("Fiebre");
+}
+
