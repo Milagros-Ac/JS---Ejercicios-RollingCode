@@ -13,3 +13,25 @@ if (edad >= 0 && edad <= 12) {
 } else {
     console.log("Edad no válida");
 }
+
+/*2. Validar fecha 
+○ Comprobar si una fecha (día, mes, año) ingresada por el usuario es válida.*/
+const dia = Number(prompt("Ingrese Día:"));
+const mes = Number(prompt("Ingrese Mes:"));
+const año = Number(prompt("Ingrese Año:"));
+
+let esValida = false;
+
+if (año > 0 && mes >= 1 && mes <= 12) {
+    if (mes === 2) { 
+        const esBisiesto = (año % 4 === 0 && año % 100 !== 0) || año % 400 === 0;
+        const maxDias = esBisiesto ? 29 : 28;
+        if (dia >= 1 && dia <= maxDias) esValida = true;
+    } else if (mes === 4 || mes === 6 || mes === 9 || mes === 11) { 
+        if (dia >= 1 && dia <= 30) esValida = true;
+    } else { 
+        if (dia >= 1 && dia <= 31) esValida = true;
+    }
+}
+
+esValida ? console.log("Fecha válida") : console.log("Fecha no válida");
