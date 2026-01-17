@@ -51,3 +51,19 @@ if (rol === "admin") {
 } else {
     console.log("Rol no reconocido. Acceso denegado.");
 }
+
+/*4. Impuestos según ingreso 
+○ Calcular el impuesto a pagar según rangos de ingreso (ej. menos de 
+R$1.000, entre R$1.000 y R$5.000, más de R$5.000).*/
+
+const ingreso = Number(prompt("Ingreso mensual:"));
+let impuesto = 0;
+
+if (ingreso <= 1000) {
+    impuesto = 0;
+} else if (ingreso <= 5000) {
+    impuesto = ingreso * 0.10; 
+} else {
+    impuesto = ingreso * 0.20; 
+}
+console.log(`Impuesto a pagar: $${impuesto}`);
